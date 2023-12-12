@@ -7,11 +7,115 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-primary-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="bi bi-person"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto pr-50  mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Basket <i
+                                    class="bi bi-basket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Hello</h1>
+    <!-- Header -->
+    <div class="container-fluid bg-primary py-5">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-flex-end">
+                <div class="col-4">
+                    <h1 class="dark-green-text fw-bold">Welcome to Greenville.</h1>
+                    <h4 class="green-text">Bringing Quality Munch to Dublin.</h4>
+                    <button type="button" class="btn text-light btn-button-dark fw-semibold">Browse our menu <i
+                            class="bi bi-arrow-right"></i></button>
+                    <button type="button"
+                        class="btn btn-outline-button-dark outline-button fw-semibold border-2">Contact us <i
+                            class="bi bi-arrow-right"></i></button>
+                </div>
+
+                <div class="col-1"></div>
+
+                <div class="col">
+                    <img src="images/greenville-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What We Serve -->
+    <div class="container-fluid my-8">
+        <div class="container">
+            <!-- <div class="d-flex flex-column align-items-center">
+                <h4 class="light-green-text">WHAT WE SERVE</h4>
+                <h2 class="dark-green-text fw-bold">Check out our delicious menus</h2>
+            </div> -->
+            
+            <div class="row align-items-center text-center mb-6">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <h4 class="light-green-text">WHAT WE SERVE</h4>
+                <h2 class="dark-green-text fw-bold">Check out our delicious menus</h2>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+            <div class="row align-items-center text-center">
+                <div class="col-4">
+                    <img src="images/breakfast.png" alt="">
+                    <h3 class="dark-green-text fw-bold">Breakfast</h3>
+                    <h4 class="grey-text">Enjoy our all-day breakfast at Greenville</h4>
+                </div>
+                <div class="col-4">
+                    <img src="images/lunch.png" alt="">
+                    <h3 class="dark-green-text fw-bold">Lunch</h3>
+                    <h4 class="grey-text">Savory sandwiches made by us daily</h4>
+                </div>
+                <div class="col-4">
+                    <img src="images/treats.png" alt="">
+                    <h3 class="dark-green-text fw-bold">Treats</h3>
+                    <h4 class="grey-text">Sweet treats made specially for you</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

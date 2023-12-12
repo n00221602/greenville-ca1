@@ -1,0 +1,113 @@
+//import functions
+@import "../node_modules/bootstrap/scss/functions";
+
+//Global options
+$enable-caret: false !default;
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+
+//Theme colours
+$primary: #ceeeee;
+$secondary: #87ddee;
+$light: #ffffff;
+$dark: #000000;
+
+
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+    0:0,
+    1: $spacer * 0.1,
+    2: $spacer * 0.33,
+    3: $spacer,
+    4: $spacer * 2,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
+);
+
+//variables and mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//Custom colours
+//$custom-colours is a map.
+$custom-colors: (
+    "primary-dark": #c1dddd,
+    "secondary-light": #fccf7b,
+    "button-dark": #4e8d7c,
+    "button-light": #3dba9c,
+    "dark-green-text": #2c393d,
+    "green-text": #485c62,
+);
+
+//Each loop for creating different shades from cycled colours
+@each $color, $value in $colors {
+    .bg-#{$color} {
+        background-color: $value;
+    }
+
+    .bg-#{$color}-light {
+        background-color: tint-colour($value, 60%)
+    }
+}
+
+//This merges our custom colour map with the theme
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+//Import bootstrap scss files
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+// Buttons
+.outline-button {
+    color:#4e8d7c
+  }
+
+.outline-button:hover {
+    color:white;
+}
+
+//Text
+h1{
+    font-size: 50px;
+    line-height: 52px;
+}
+
+h2 {
+    font-size: 47px;
+    line-height: 58px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+h4 {
+    font-size: 27px;
+    line-height: 36px;
+}
+
+//Text colours
+.dark-green-text{
+    color: #2c393d;
+}
+
+.green-text{
+    color: #485c62;
+}
+
+.light-green-text{
+    color: #4e8d7c;
+}
+
+.grey-text{
+    color: #7f7f7f;
+}
+
+
+
