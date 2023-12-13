@@ -72,31 +72,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     color:white;
 }
 
-//Text
-h1{
-    font-size: 50px;
-    line-height: 52px;
-}
-
-h2 {
-    font-size: 47px;
-    line-height: 58px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-h4 {
-    font-size: 32px;
-    line-height: 36px;
-}
-
-h5 {
-    font-size: 25px;
-    line-height: 25px;
-}
-
 //Colours
 .dark-green-text{
     color: #2c393d;
@@ -161,16 +136,4 @@ h5 {
     background-size: cover;
     background-position: center;
     height: 216px;
-}
-
-//Stars
-
-.text-box {
-    position: fixed;
-    width: 95px;
-    height: 38px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
