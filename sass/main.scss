@@ -8,7 +8,7 @@ $enable-shadows: false !default;
 
 //Theme colours
 $primary: #ceeeee;
-$secondary: #87ddee;
+$secondary: #abe1d4;
 $light: #ffffff;
 $dark: #000000;
 
@@ -84,15 +84,20 @@ h2 {
 }
 
 h3 {
-    font-size: 38px;
+    font-size: 40px;
 }
 
 h4 {
-    font-size: 27px;
+    font-size: 32px;
     line-height: 36px;
 }
 
-//Text colours
+h5 {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+//Colours
 .dark-green-text{
     color: #2c393d;
 }
@@ -109,5 +114,63 @@ h4 {
     color: #7f7f7f;
 }
 
+.dark-grey-text{
+    color: #464646;
+}
 
+.icon-green{
+    color: #029094
+}
 
+.icon-red{
+    color: #ea4335;
+}
+
+.icon-yellow{
+    color: #fff737;
+}
+
+//Background image
+.location-bg-img {
+    background-image: url(/images/locations-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 625px;
+}
+
+.inchicore-bg-img {
+    background-image: url(/images/inchicore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 216px;
+}
+
+.rathmines-bg-img {
+    background-image: url(/images/rathmines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 216px;
+}
+
+.monkstown-bg-img {
+    background-image: url(/images/monkstown.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 216px;
+}
+
+//Stars
+
+.text-box {
+    position: fixed;
+    width: 95px;
+    height: 38px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
