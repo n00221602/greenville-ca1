@@ -11,6 +11,7 @@ $primary: #ceeeee;
 $secondary: #abe1d4;
 $light: #ffffff;
 $dark: #000000;
+$success: #4e8d7c;
 
 
 
@@ -39,8 +40,8 @@ $custom-colors: (
     "secondary-light": #fccf7b,
     "button-dark": #4e8d7c,
     "button-light": #3dba9c,
-    "dark-green-text": #2c393d,
-    "green-text": #485c62,
+    "dark-green": #2c393d,
+    "green": #485c62,
 );
 
 //Each loop for creating different shades from cycled colours
@@ -60,9 +61,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 //Import bootstrap scss files
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-
-
 // Buttons
 .outline-button {
     color:#4e8d7c
@@ -73,23 +71,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 }
 
 //Colours
-.dark-green-text{
+.dark-green{
     color: #2c393d;
 }
 
-.green-text{
+.green{
     color: #485c62;
 }
 
-.light-green-text{
+.light-green{
     color: #4e8d7c;
 }
 
-.grey-text{
+.grey{
     color: #7f7f7f;
 }
 
-.dark-grey-text{
+.dark-grey{
     color: #464646;
 }
 
@@ -136,4 +134,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     background-size: cover;
     background-position: center;
     height: 216px;
+}
+
+.my-card {
+    width: 22.75rem;
+    height: 23.5rem;
 }
