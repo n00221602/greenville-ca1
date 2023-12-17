@@ -111,7 +111,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 39rem;
 }
 
 .inchicore-bg-img {
@@ -190,4 +189,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 .border-dotted {
     border: dotted;
 ;
+}
+
+
+//Media queries
+@media (max-width: 768px) {
+    .text-center {
+        text-align: center;
+    }
 }

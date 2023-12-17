@@ -13469,7 +13469,6 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 39rem;
 }
 
 .inchicore-bg-img {
@@ -13541,4 +13540,10 @@ textarea.form-control-lg {
 
 .border-dotted {
   border: dotted;
+}
+
+@media (max-width: 768px) {
+  .text-center {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
