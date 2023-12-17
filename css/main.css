@@ -13528,4 +13528,17 @@ textarea.form-control-lg {
 
 .basket-bg {
   background-color: #f2faf8;
+}
+
+.basket-img {
+  width: 11.25rem;
+  height: 8.25rem;
+}
+
+.my-qty {
+  width: 3.5rem;
+}
+
+.border-dotted {
+  border: dotted;
 }/*# sourceMappingURL=main.css.map */

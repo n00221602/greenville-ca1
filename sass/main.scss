@@ -105,7 +105,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     color: #fff737;
 }
 
-//Background image
+//Images
 .location-bg-img {
     background-image: url(/images/locations-bg.svg);
     background-repeat: no-repeat;
@@ -154,6 +154,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     height: 7rem;
 }
 
+//Card
 .my-card {
     width: 22.75rem;
     height: 23.5rem;
@@ -171,6 +172,22 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
     
 }
 
+
+//Basket
 .basket-bg {
     background-color: #f2faf8;
+}
+
+.basket-img {
+    width: 11.25rem;
+    height: 8.25rem;
+}
+
+.my-qty {
+    width: 3.5rem;
+}
+
+.border-dotted {
+    border: dotted;
+;
 }
