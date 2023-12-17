@@ -1,116 +1,4 @@
 @charset "UTF-8";
-.bg-blue {
-  background-color: #0d6efd;
-}
-
-.bg-blue-light {
-  background-color: tint-colour(#0d6efd, 60%);
-}
-
-.bg-indigo {
-  background-color: #6610f2;
-}
-
-.bg-indigo-light {
-  background-color: tint-colour(#6610f2, 60%);
-}
-
-.bg-purple {
-  background-color: #6f42c1;
-}
-
-.bg-purple-light {
-  background-color: tint-colour(#6f42c1, 60%);
-}
-
-.bg-pink {
-  background-color: #d63384;
-}
-
-.bg-pink-light {
-  background-color: tint-colour(#d63384, 60%);
-}
-
-.bg-red {
-  background-color: #dc3545;
-}
-
-.bg-red-light {
-  background-color: tint-colour(#dc3545, 60%);
-}
-
-.bg-orange {
-  background-color: #fd7e14;
-}
-
-.bg-orange-light {
-  background-color: tint-colour(#fd7e14, 60%);
-}
-
-.bg-yellow {
-  background-color: #ffc107;
-}
-
-.bg-yellow-light {
-  background-color: tint-colour(#ffc107, 60%);
-}
-
-.bg-green {
-  background-color: #198754;
-}
-
-.bg-green-light {
-  background-color: tint-colour(#198754, 60%);
-}
-
-.bg-teal {
-  background-color: #20c997;
-}
-
-.bg-teal-light {
-  background-color: tint-colour(#20c997, 60%);
-}
-
-.bg-cyan {
-  background-color: #0dcaf0;
-}
-
-.bg-cyan-light {
-  background-color: tint-colour(#0dcaf0, 60%);
-}
-
-.bg-black {
-  background-color: #000;
-}
-
-.bg-black-light {
-  background-color: tint-colour(#000, 60%);
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.bg-white-light {
-  background-color: tint-colour(#fff, 60%);
-}
-
-.bg-gray {
-  background-color: #6c757d;
-}
-
-.bg-gray-light {
-  background-color: tint-colour(#6c757d, 60%);
-}
-
-.bg-gray-dark {
-  background-color: #343a40;
-}
-
-.bg-gray-dark-light {
-  background-color: tint-colour(#343a40, 60%);
-}
-
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -13524,12 +13412,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.outline-button {
+.header-outline-button {
   color: #4e8d7c;
 }
 
-.outline-button:hover {
+.header-outline-button:hover {
   color: white;
+}
+
+.footer-outline-button {
+  color: white;
+}
+
+.footer-outline-button:hover {
+  color: #4e8d7c;
 }
 
 .dark-green {
@@ -13542,6 +13438,10 @@ textarea.form-control-lg {
 
 .light-green {
   color: #4e8d7c;
+}
+
+.lighter-green {
+  color: #77a59a;
 }
 
 .grey {
@@ -13565,38 +13465,67 @@ textarea.form-control-lg {
 }
 
 .location-bg-img {
-  background-image: url(/images/locations-bg.png);
+  background-image: url(/images/locations-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 625px;
+  height: 39rem;
 }
 
 .inchicore-bg-img {
-  background-image: url(/images/inchicore.jpg);
+  background-image: url(/images/inchicore.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 216px;
+  height: 13.5rem;
 }
 
 .rathmines-bg-img {
-  background-image: url(/images/rathmines.jpg);
+  background-image: url(/images/rathmines.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 216px;
+  height: 13.5rem;
 }
 
 .monkstown-bg-img {
-  background-image: url(/images/monkstown.jpg);
+  background-image: url(/images/monkstown.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 216px;
+  height: 13.5rem;
+}
+
+.office-bg-img {
+  background-image: url(/images/office-catering.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 7rem;
+}
+
+.allergen-bg-img {
+  background-image: url(/images/allergen-info.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 7rem;
 }
 
 .my-card {
   width: 22.75rem;
   height: 23.5rem;
+}
+
+.ls-wide {
+  letter-spacing: 0.025em;
+}
+
+.menu-img {
+  width: 35rem;
+  height: 25rem;
+}
+
+.basket-bg {
+  background-color: #f2faf8;
 }/*# sourceMappingURL=main.css.map */

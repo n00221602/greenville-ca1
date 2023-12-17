@@ -44,16 +44,6 @@ $custom-colors: (
     "green": #485c62,
 );
 
-//Each loop for creating different shades from cycled colours
-@each $color, $value in $colors {
-    .bg-#{$color} {
-        background-color: $value;
-    }
-
-    .bg-#{$color}-light {
-        background-color: tint-colour($value, 60%)
-    }
-}
 
 //This merges our custom colour map with the theme
 $theme-colors: map-merge($theme-colors, $custom-colors );
@@ -62,81 +52,125 @@ $theme-colors: map-merge($theme-colors, $custom-colors );
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Buttons
-.outline-button {
-    color:#4e8d7c
-  }
-
-.outline-button:hover {
-    color:white;
+.header-outline-button {
+    color: #4e8d7c
 }
 
-//Colours
-.dark-green{
-    color: #2c393d;
+.header-outline-button:hover {
+    color: white;
 }
 
-.green{
-    color: #485c62;
+.footer-outline-button {
+    color: white
 }
 
-.light-green{
+.footer-outline-button:hover {
     color: #4e8d7c;
 }
 
-.grey{
+//Colours
+.dark-green {
+    color: #2c393d;
+}
+
+.green {
+    color: #485c62;
+}
+
+.light-green {
+    color: #4e8d7c;
+}
+
+.lighter-green {
+    color: #77a59a;
+}
+
+.grey {
     color: #7f7f7f;
 }
 
-.dark-grey{
+.dark-grey {
     color: #464646;
 }
 
-.icon-green{
+.icon-green {
     color: #029094
 }
 
-.icon-red{
+.icon-red {
     color: #ea4335;
 }
 
-.icon-yellow{
+.icon-yellow {
     color: #fff737;
 }
 
 //Background image
 .location-bg-img {
-    background-image: url(/images/locations-bg.png);
+    background-image: url(/images/locations-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 625px;
+    height: 39rem;
 }
 
 .inchicore-bg-img {
-    background-image: url(/images/inchicore.jpg);
+    background-image: url(/images/inchicore.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 216px;
+    height: 13.5rem;
 }
 
 .rathmines-bg-img {
-    background-image: url(/images/rathmines.jpg);
+    background-image: url(/images/rathmines.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 216px;
+    height: 13.5rem;
 }
 
 .monkstown-bg-img {
-    background-image: url(/images/monkstown.jpg);
+    background-image: url(/images/monkstown.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 216px;
+    height: 13.5rem;
+}
+
+.office-bg-img {
+    background-image: url(/images/office-catering.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 7rem;
+}
+
+.allergen-bg-img {
+    background-image: url(/images/allergen-info.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 7rem;
 }
 
 .my-card {
     width: 22.75rem;
     height: 23.5rem;
+}
+
+//Letter spacing
+.ls-wide {
+    letter-spacing: 0.025em;
+}
+
+
+.menu-img {
+    width: 35rem;
+    height: 25rem;
+    
+}
+
+.basket-bg {
+    background-color: #f2faf8;
 }

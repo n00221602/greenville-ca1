@@ -21,29 +21,35 @@
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg bg-primary-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="bi bi-person"></i></a>
+                <a class="navbar-brand" href="#"><i class="dark-green bi-person fs-1"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto pr-50  mb-2 mb-lg-0 fw-semibold">
+                    <ul class="navbar-nav me-auto pr-50 fs-5 mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menus
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="breakfast-menu.html">Breakfast</a></li>
+                              <li><a class="dropdown-item" href="lunch-menu.html">Lunch</a></li>
+                              <li><a class="dropdown-item" href="treats-menu.html">Treats</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Locations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                            <a class="nav-link" aria-current="page" href="#">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Locations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Basket <i
-                                    class="bi bi-basket"></i></a>
+                            <a class="nav-link  " aria-current="page" href="basket.html">Basket <i
+                                    class="bi bi-basket ms-2"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -53,22 +59,19 @@
 
     <!-- Header -->
     <div class="container-fluid bg-primary py-5">
-        <div class="container py-5">
+        <div class="container-md py-5">
             <div class="row align-items-center justify-content-flex-end">
                 <div class="col-4">
                     <h1 class="dark-green fw-bold display-4">Welcome to Greenville.</h1>
                     <h2 class="green">Bringing Quality Munch to Dublin.</h2>
-                    <button type="button" class="btn text-light btn-button-dark fw-semibold">Browse our menu <i
-                            class="bi bi-arrow-right"></i></button>
-                    <button type="button"
-                        class="btn btn-outline-button-dark outline-button fw-semibold border-2">Contact us <i
-                            class="bi bi-arrow-right"></i></button>
+                    <button type="button" class="btn text-light btn-button-dark fw-semibold">Browse our menu <i class="bi bi-arrow-right"></i></button>
+                    <button type="button" class="btn btn-outline-button-dark header-outline-button fw-semibold border-2">Contact us <i class="bi bi-arrow-right"></i></button>
                 </div>
 
                 <div class="col-1"></div>
 
-                <div class="col">
-                    <img src="images/greenville-logo.png" alt="">
+                <div class="col-7">
+                    <img src="images/greenville-header-logo.svg" alt="">
                 </div>
             </div>
         </div>
@@ -76,7 +79,7 @@
 
     <!-- What We Serve -->
     <div class="container-fluid my-8">
-        <div class="container">
+        <div class="container-md">
 
             <div class="row align-items-center text-center mb-6">
                 <div class="col-4">
@@ -92,17 +95,17 @@
 
             <div class="row align-items-center text-center">
                 <div class="col-4">
-                    <img src="images/breakfast.png" class="img-fluid pb-3   " alt="">
+                    <img src="images/breakfast.svg" class="img-fluid mb-3 rounded-4" alt="">
                     <h1 class="dark-green fw-bold">Breakfast</h1>
                     <h2 class="grey">Enjoy our all-day breakfast at Greenville</h2>
                 </div>
                 <div class="col-4">
-                    <img src="images/lunch.png" class="img-fluid pb-3" alt="">
+                    <img src="images/lunch.svg" class="img-fluid mb-3 rounded-4" alt="">
                     <h1 class="dark-green fw-bold">Lunch</h1>
                     <h2 class="grey">Savoury sandwiches made by us daily</h2>
                 </div>
                 <div class="col-4">
-                    <img src="images/treats.png" class="img-fluid pb-3" alt="">
+                    <img src="images/treats.svg" class="img-fluid mb-3 rounded-4" alt="">
                     <h1 class="dark-green fw-bold">Treats</h1>
                     <h2 class="grey">Sweet treats made specially for you</h2>
                 </div>
@@ -112,7 +115,7 @@
 
     <!-- Where We Locate -->
     <div class="container-fluid my-8 pt-4 location-bg-img">
-        <div class="container">
+        <div class="container-md">
 
             <div class="row align-items-center text-center mb-2">
                 <div class="col-4">
@@ -136,7 +139,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold dark-green pb-2">Greenville - Inchicore<i
                                     class="icon-green bi-check-circle-fill ms-3"></i></h5>
-                            <p class="card-text fw-medium grey pb-2"><i class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Dublin 8, D08 R8Y2</p>
+                            <p class="card-text fw-medium grey pb-2"><i
+                                    class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Dublin 8, D08 R8Y2</p>
                             <button type="button" class="btn text-light btn-button-light fw-semibold"
                                 style="margin-right: 8px;">Opening times <i class="bi bi-arrow-right"></i></button>
                             <button type="button" class="btn text-light btn-button-light fw-semibold">Map View <i
@@ -153,7 +157,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold dark-green pb-2">Greenville - Rathmines<i
                                     class="icon-green bi-check-circle-fill ms-3"></i></h5>
-                            <p class="card-text fw-medium grey pb-2"><i class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Dublin 6, D06 HX53</p>
+                            <p class="card-text fw-medium grey pb-2"><i
+                                    class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Dublin 6, D06 HX53</p>
                             <button type="button" class="btn text-light btn-button-light fw-semibold"
                                 style="margin-right: 8px;">Opening times <i class="bi bi-arrow-right"></i></button>
                             <button type="button" class="btn text-light btn-button-light fw-semibold">Map View <i
@@ -170,7 +175,8 @@
                         <div class="card-body">
                             <h5 class="card-title fw-bold dark-green pb-2">Greenville - Monkstown<i
                                     class="icon-green bi-check-circle-fill ms-3"></i></h5>
-                            <p class="card-text fw-medium grey pb-2"><i class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Co. Dublin, A94 CF65</p>
+                            <p class="card-text fw-medium grey pb-2"><i
+                                    class="icon-red bi-geo-alt-fill fs-5 me-2"></i>Co. Dublin, A94 CF65</p>
                             <button type="button" class="btn text-light btn-button-light fw-semibold"
                                 style="margin-right: 8px;">Opening times <i class="bi bi-arrow-right"></i></button>
                             <button type="button" class="btn text-light btn-button-light fw-semibold">Map View <i
@@ -185,7 +191,7 @@
     <!-- What People Say -->
 
     <div class="container-fluid my-8">
-        <div class="container">
+        <div class="container-md">
             <div class="row align-items-center text-center">
                 <div class="col justify-content-center">
                     <h5 class="light-green fw-bold">WHAT PEOPLE SAY</h5>
@@ -249,25 +255,42 @@
     <!-- Footer -->
 
     <footer>
-        <div class="container-fluid mt-8 py-6 bg-secondary">
-            <div class="container">
+        <div class="container-fluid mt-6 py-7 bg-secondary">
+            <div class="container-md">
 
                 <div class="row align-items-center text-center">
                     <div class="col-6">
-                        <img src="images/Greenville Logo.png">
+                        <img src="images/greenville-logo.svg">
                     </div>
                     <div class="col">
                         <h1 class="display-1 fw-bold dark-grey">Want More Greenville?</h1>
                         <h2 class="grey lh-sm mb-3">Sign up to our newsletter for the latest news and weekly offers</h2>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control rounded-start border-success border-4" placeholder="Email address"
-                                aria-label="Email address" aria-describedby="button-addon2">
-                                <button type="button" class="btn text-light btn-button-dark fw-semibold px-4 py-3">Sign up</button>
+                            <input type="text" class="form-control rounded-start border-success border-4"
+                                placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+                            <button type="button" class="btn text-light btn-button-dark fw-semibold px-4 py-3">Sign
+                                up</button>
                         </div>
 
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid bg-button-dark">
+            <div class="container-md px-0 bg-button-dark">
+                <div class="row pb-2 text-light">
+                    <div class="col-6 mx-0 ps-3 pt-2 office-bg-img">
+                        <h2 class="fw-bold ls-wide py-2 ">Office Catering</h2>
+                        <button type="button" class="btn btn-outline-light footer-outline-button fw-semibold border-2 rounded-5 px-3">See more <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="col-6 mx-0 ps-3 pt-2 allergen-bg-img">
+                        <h2 class="fw-bold ls-wide py-2 ">Allergen Information</h2>
+                        <button type="button" class="btn btn-outline-light footer-outline-button fw-semibold border-2 rounded-5 px-3">See more <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </footer>
 
